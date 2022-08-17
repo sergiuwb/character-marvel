@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 95%;
+    color: #E0E0E0;
+    box-sizing: border-box;
+    margin: 20px;
+    background: #DC2424;
+    background: linear-gradient(to left,  #bc4040, #5c6dd6);
+
+}
+
+.title {
+    color: whitesmoke;
+    font-size: 3rem;
+    margin: 20px 0;
+    text-shadow: 4px 4px 4px black;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.searchBar {
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+
+}
+
+.searchBar input {
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 4px 4px 4px black;
+    width: 330px;
+    background: rgba(33,33,32,1);
+    color: white;
+}
+
+.searchBar input:focus {
+    background: #263238;
+    outline: none;
+}
+
+.searchBar button {
+    font-size: 24px;
+    background: #1c345b;
+    color: white;
+    border: blue;
+    padding: 10px 10px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 4px 4px 4px black;
+    text-shadow: -1px -1px 2px black;
+}
+
+.card {
+    margin: 20px;
+    height: 400px;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px #00212d;
+    filter: brightness(1) saturate(90%);
+    transition: transform 0.6s, box-shadow 0.6s, filter 0.4s;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 40px #f9b916;
+    transform: scale(1.02);
+    filter: brightness(1.2) saturate(110%);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card__gradient-overlay {
+    height: 100%;
+    background: linear-gradient(rgba(180,180,255, 0.1) 35%, rgba(33,33,32,0.8) 55%, rgba(33,33,32,1) 60%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
