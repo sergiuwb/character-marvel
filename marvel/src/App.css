@@ -58,15 +58,38 @@ body {
     text-shadow: -1px -1px 2px black;
 }
 
+.main-card{
+    display: flex;
+    justify-content: center;
+}
+
 .card {
     margin: 20px;
-    height: 400px;
-    min-width: 300px;
-    max-width: 300px;
+    height: 500px;
+    min-width: 400px;
+    max-width: 400px;
     border-radius: 10px;
     box-shadow: 1px 1px 30px #00212d;
     filter: brightness(1) saturate(90%);
     transition: transform 0.6s, box-shadow 0.6s, filter 0.4s;
+}
+
+.card img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.card .name{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.card .descr{
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
 }
 
 .card:hover {

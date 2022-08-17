@@ -16,7 +16,6 @@ function App() {
         <Header title="Marvel Characters Search" />
         <SearchBar search={search}/>
         {characterCard && characterCard.map(character => <Card props={character} key={character.id}/>)}
-        <Card/>
     </div>
   );
 }

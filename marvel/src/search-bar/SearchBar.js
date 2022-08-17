@@ -5,8 +5,9 @@ function SearchBar({search}) {
 
     const inputElem = useRef(null)
 
-    const searchCharacters = () => {
-        getCharacters("https://gateway.marvel.com:443/v1/public/characters?", inputElem.current.value, "apikey=785b51facf6b88828e3b89fb99aef3e1").then(data => search(data.data.results))
+    const searchCharacters = (ev) => {
+        ev.preventDefault()
+        getCharacters("https://gateway.marvel.com:443/v1/public/characters?", inputElem.current.value, "apikey=d18e377555fac63b29387a941ec81d22").then(data => search(data.results))
     }
 
 
