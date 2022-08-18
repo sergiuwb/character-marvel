@@ -74,6 +74,13 @@ body {
     transition: transform 0.6s, box-shadow 0.6s, filter 0.4s;
 }
 
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
 .card img{
     width: 400px;
     height: 300px;
